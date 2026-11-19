@@ -45,14 +45,14 @@ Success outcome: The user has an account, and can edit the information of the ac
 
 Main success scenario:
 	
-		   1.The user requests to create an account/ sign in.
-		   2.The system prompts the user to provide the name, password and color of the profile.
-		   3.The system checks that the username is not already taken/ The system checks if the request is   currently allowed.
-		   4.The system creates and saves the user's account.
-		   5.The system switches to a log-in screen.
-		   6.The user puts the name and password, and requests to log-in.
-		   7.The system checks if the request is currently allowed/ checks if username and password matches.
-		   8.The system successfully logs in to the account.
+		1.The user requests to create an account/ sign in.
+		2.The system prompts the user to provide the name, password and color of the profile.
+		3.The system checks that the username is not already taken/ The system checks if the request is   currently allowed.
+		4.The system creates and saves the user's account.
+		5.The system switches to a log-in screen.
+		6.The user puts the name and password, and requests to log-in.
+		7.The system checks if the request is currently allowed/ checks if username and password matches.
+		8.The system successfully logs in to the account.
 
 Extensions:
 
@@ -114,25 +114,25 @@ Success outcome: User added a new task, edited an existing task, and deleted an 
 
 Main success scenario :
 
-			1.The user requests to create a task.
-			2.The system prompts the user to provide task information.
-			3.The user provides the name and description of the task, and optionally adds a location, deadline date, attaches roles to group members, sorts it by priority and updates task status from ‘not started’, ‘in progress’, and ‘completed’.
-			4.The system checks if the request is currently allowed.
-			5.The system creates and saves the task.
-			6.The user requests to edit an existing task
-			7.The system prompts the user to provide current task information.
-			8.The user modifies the name and description of the current task, adds, modifies, or removes the deadline, location, assigned roles, priority level, and task status.
-			9.The system checks if the request is currently allowed.
-			10.The system saves the modified task.
+		1.The user requests to create a task.
+		2.The system prompts the user to provide task information.
+		3.The user provides the name and description of the task, and optionally adds a location, deadline date, attaches roles to group members, sorts it by priority and updates task status from ‘not started’, ‘in progress’, and ‘completed’.
+		4.The system checks if the request is currently allowed.
+		5.The system creates and saves the task.
+		6.The user requests to edit an existing task
+		7.The system prompts the user to provide current task information.
+		8.The user modifies the name and description of the current task, adds, modifies, or removes the deadline, location, assigned roles, priority level, and task status.
+		9.The system checks if the request is currently allowed.
+		10.The system saves the modified task.
 			
 Extensions:
 
-			4a. Description length is exceeded character limit:
+		4a. Description length is exceeded character limit:
 			 	The system explains it cannot exceed character limit, and asks them to try again.
-			3a. If the deadline is unknown, the group member selects "Undecided."
-			3b. If a deadline is provided, the system calculates and displays the days remaining.
-			3c, 8a. The group member skips any optional feature.
-			12a.The system does not delete a task.
+		3a. If the deadline is unknown, the group member selects "Undecided."
+		3b. If a deadline is provided, the system calculates and displays the days remaining.
+		3c, 8a. The group member skips any optional feature.
+		12a.The system does not delete a task.
 
 ###Managing Dashboard and Editing Profile
 
@@ -149,15 +149,15 @@ Success Outcome: The user is on the dashboard.
 
 Main Success Scenario:
 
-			When the user is logging in, the system shows the dashboard.
-			The user requests to go to the dashboard.
-			The system checks the request and shows the dashboard.
-			The user requests to go to the chosen group.
-			The system checks the request and shows the group. 
-			The user requests to edit the information of the account such as name, password, and color of the profile.
-			The system prompts the user to change the information.
-			The system checks if the request is currently allowed.
-			The system successfully saves the updated profile.
+		1.When the user is logging in, the system shows the dashboard.
+		2.The user requests to go to the dashboard.
+		3.The system checks the request and shows the dashboard.
+		4.The user requests to go to the chosen group.
+		5.The system checks the request and shows the group. 
+		6.The user requests to edit the information of the account such as name, password, and color of the profile.
+		7.The system prompts the user to change the information.
+		8.The system checks if the request is currently allowed.
+		9.The system successfully saves the updated profile.
 
 ### Deleting a Task and Recovering from Trash 
 
@@ -173,19 +173,21 @@ Trigger : The user deleting task, and recovering task from trash
 Success Outcome: The task is in trash, or recovered.
 
 Main Success Scenario:
-			The user requests to delete the task.
-			The system asks to confirm the delete task.
-			The system moves the task to trash.
-			The system notifies it is deleted and in trash.
-			The user requests to recover trash.
-			The user asks to confirm the recovery task.
-			The system moves the task to its old place, group.
-			The system notifies it is recovered successfully.
+
+		1.The user requests to delete the task.
+		2.The system asks to confirm the delete task.
+		3.The system moves the task to trash.
+		4.The system notifies it is deleted and in trash.
+		5.The user requests to recover trash.
+		6.The user asks to confirm the recovery task.
+		7.The system moves the task to its old place, group.
+		8.The system notifies it is recovered successfully.
 Extensions:
-			2a. The user does not confirm
-		The system does not delete the task
-			6a. The user does not confirm
-		The system does not recover the task
+
+		2a. The user does not confirm
+			The system does not delete the task
+		6a. The user does not confirm
+			The system does not recover the task
 
 
 (Add additional use cases as needed.)
