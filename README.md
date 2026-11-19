@@ -45,14 +45,14 @@ Success outcome: The user has an account, and can edit the information of the ac
 
 Main success scenario:
 	
-	   1.The user requests to create an account/ sign in.
-	   2.The system prompts the user to provide the name, password and color of the profile.
-	   3.The system checks that the username is not already taken/ The system checks if the request is   currently allowed.
-	   4.The system creates and saves the user's account.
-	   5.The system switches to a log-in screen.
-	   6.The user puts the name and password, and requests to log-in.
-	   7.The system checks if the request is currently allowed/ checks if username and password matches.
-	   8.The system successfully logs in to the account.
+		   1.The user requests to create an account/ sign in.
+		   2.The system prompts the user to provide the name, password and color of the profile.
+		   3.The system checks that the username is not already taken/ The system checks if the request is   currently allowed.
+		   4.The system creates and saves the user's account.
+		   5.The system switches to a log-in screen.
+		   6.The user puts the name and password, and requests to log-in.
+		   7.The system checks if the request is currently allowed/ checks if username and password matches.
+		   8.The system successfully logs in to the account.
 
 Extensions:
 
@@ -100,33 +100,39 @@ Extensions:
 
 
 ###Creating and Editing a Task
+
 Primary factor :  The user creating and editing a task
+
 Precondition:
-The user is logged into the application.
-The user has created or joined a group.
+
+	The user is logged into the application.
+	The user has created or joined a group.
+	
 Trigger: The user requests to create, edit and delete a group.
+
 Success outcome: User added a new task, edited an existing task, and deleted an existing task.
+
 Main success scenario :
-The user requests to create a task.
-The system prompts the user to provide task information.
-The user provides the name and description of the task, and optionally adds a location, deadline date, attaches roles to group members, sorts it by priority and updates task status from ‘not started’, ‘in progress’, and ‘completed’.
-The system checks if the request is currently allowed.
-The system creates and saves the task.
-The user requests to edit an existing task
-The system prompts the user to provide current task information.
-The user modifies the name and description of the current task, adds, modifies, or removes the deadline, location, assigned roles, priority level, and task status.
-The system checks if the request is currently allowed.
-The system saves the modified task.
+
+	1.The user requests to create a task.
+	2.The system prompts the user to provide task information.
+	3.The user provides the name and description of the task, and optionally adds a location, deadline date, attaches roles to group members, sorts it by priority and updates task status from ‘not started’, ‘in progress’, and ‘completed’.
+	4.The system checks if the request is currently allowed.
+	5.The system creates and saves the task.
+	6.The user requests to edit an existing task
+	7.The system prompts the user to provide current task information.
+	8.The user modifies the name and description of the current task, adds, modifies, or removes the deadline, location, assigned roles, priority level, and task status.
+	9.The system checks if the request is currently allowed.
+	10.The system saves the modified task.
 	
 Extensions:
-4a. Description length is exceeded character limit:
- The system explains it cannot exceed character limit, and asks them to try again.
 
-3a. If the deadline is unknown, the group member selects "Undecided."
-3b. If a deadline is provided, the system calculates and displays the days remaining.
-3c, 8a. The group member skips any optional feature.
-12a.
-The system does not delete a task.
+	4a. Description length is exceeded character limit:
+	 	The system explains it cannot exceed character limit, and asks them to try again.
+	3a. If the deadline is unknown, the group member selects "Undecided."
+	3b. If a deadline is provided, the system calculates and displays the days remaining.
+	3c, 8a. The group member skips any optional feature.
+	12a.The system does not delete a task.
 
 ###Managing Dashboard and Editing Profile
 Primary Actor: The user logging in, and switching between dashboard and group, and editing information of the account.
