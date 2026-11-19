@@ -44,6 +44,7 @@ Trigger: The user requests to create an account/sign in, log into account.
 Success outcome: The user has an account, and can edit the information of the account.
 
 Main success scenario:
+
    1.The user requests to create an account/ sign in.
  
    2.The system prompts the user to provide the name, password and color of the profile.
@@ -61,14 +62,14 @@ Main success scenario:
    8.The system successfully logs in to the account.
 
 Extensions:
-	3a. Username already exists
-		The system informs the user and asks them to choose another username.
-	3b. Invalid login credentials
-		The system informs the user and requests their credentials again.
-	7a. Username not found
-		The system informs the username does not exist.
-	10a. Cancel action
-		The user can cancel an operation before saving, and the system discards unsaved changes.
+		3a. Username already exists
+			The system informs the user and asks them to choose another username.
+		3b. Invalid login credentials
+			The system informs the user and requests their credentials again.
+		7a. Username not found
+			The system informs the username does not exist.
+		10a. Cancel action
+			The user can cancel an operation before saving, and the system discards unsaved changes.
 
 
 ###Creating, Editing a Group and Inviting Member
