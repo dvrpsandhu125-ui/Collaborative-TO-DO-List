@@ -114,66 +114,78 @@ Success outcome: User added a new task, edited an existing task, and deleted an 
 
 Main success scenario :
 
-	1.The user requests to create a task.
-	2.The system prompts the user to provide task information.
-	3.The user provides the name and description of the task, and optionally adds a location, deadline date, attaches roles to group members, sorts it by priority and updates task status from ‘not started’, ‘in progress’, and ‘completed’.
-	4.The system checks if the request is currently allowed.
-	5.The system creates and saves the task.
-	6.The user requests to edit an existing task
-	7.The system prompts the user to provide current task information.
-	8.The user modifies the name and description of the current task, adds, modifies, or removes the deadline, location, assigned roles, priority level, and task status.
-	9.The system checks if the request is currently allowed.
-	10.The system saves the modified task.
-	
+			1.The user requests to create a task.
+			2.The system prompts the user to provide task information.
+			3.The user provides the name and description of the task, and optionally adds a location, deadline date, attaches roles to group members, sorts it by priority and updates task status from ‘not started’, ‘in progress’, and ‘completed’.
+			4.The system checks if the request is currently allowed.
+			5.The system creates and saves the task.
+			6.The user requests to edit an existing task
+			7.The system prompts the user to provide current task information.
+			8.The user modifies the name and description of the current task, adds, modifies, or removes the deadline, location, assigned roles, priority level, and task status.
+			9.The system checks if the request is currently allowed.
+			10.The system saves the modified task.
+			
 Extensions:
 
-	4a. Description length is exceeded character limit:
-	 	The system explains it cannot exceed character limit, and asks them to try again.
-	3a. If the deadline is unknown, the group member selects "Undecided."
-	3b. If a deadline is provided, the system calculates and displays the days remaining.
-	3c, 8a. The group member skips any optional feature.
-	12a.The system does not delete a task.
+			4a. Description length is exceeded character limit:
+			 	The system explains it cannot exceed character limit, and asks them to try again.
+			3a. If the deadline is unknown, the group member selects "Undecided."
+			3b. If a deadline is provided, the system calculates and displays the days remaining.
+			3c, 8a. The group member skips any optional feature.
+			12a.The system does not delete a task.
 
 ###Managing Dashboard and Editing Profile
+
 Primary Actor: The user logging in, and switching between dashboard and group, and editing information of the account.
+
 Preconditions:
-The user logged in
-The user may be in a group
+
+	The user logged in
+	The user may be in a group
+	
 Trigger : The user logging in and requesting to go to the dashboard.
+
 Success Outcome: The user is on the dashboard.
+
 Main Success Scenario:
-When the user is logging in, the system shows the dashboard.
-The user requests to go to the dashboard.
-The system checks the request and shows the dashboard.
-The user requests to go to the chosen group.
-The system checks the request and shows the group. 
-The user requests to edit the information of the account such as name, password, and color of the profile.
-The system prompts the user to change the information.
-The system checks if the request is currently allowed.
-The system successfully saves the updated profile.
+
+			When the user is logging in, the system shows the dashboard.
+			The user requests to go to the dashboard.
+			The system checks the request and shows the dashboard.
+			The user requests to go to the chosen group.
+			The system checks the request and shows the group. 
+			The user requests to edit the information of the account such as name, password, and color of the profile.
+			The system prompts the user to change the information.
+			The system checks if the request is currently allowed.
+			The system successfully saves the updated profile.
 
 ### Deleting a Task and Recovering from Trash 
+
 Primary Actor : The user deleting tasks, and recovering tasks from trash.
+
 Preconditions:
-The user logged in
-The user may be in a group
-The user may have deleted a task before
+	The user logged in
+	The user may be in a group
+	The user may have deleted a task before
+	
 Trigger : The user deleting task, and recovering task from trash
+
 Success Outcome: The task is in trash, or recovered.
+
 Main Success Scenario:
-The user requests to delete the task.
-The system asks to confirm the delete task.
-The system moves the task to trash.
-The system notifies it is deleted and in trash.
-The user requests to recover trash.
-The user asks to confirm the recovery task.
-The system moves the task to its old place, group.
-The system notifies it is recovered successfully.
+			The user requests to delete the task.
+			The system asks to confirm the delete task.
+			The system moves the task to trash.
+			The system notifies it is deleted and in trash.
+			The user requests to recover trash.
+			The user asks to confirm the recovery task.
+			The system moves the task to its old place, group.
+			The system notifies it is recovered successfully.
 Extensions:
-	2a. The user does not confirm
-The system does not delete the task
-	6a. The user does not confirm
-The system does not recover the task
+			2a. The user does not confirm
+		The system does not delete the task
+			6a. The user does not confirm
+		The system does not recover the task
 
 
 (Add additional use cases as needed.)
