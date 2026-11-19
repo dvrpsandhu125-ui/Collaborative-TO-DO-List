@@ -44,22 +44,22 @@ Trigger: The user requests to create an account/sign in, log into account.
 Success outcome: The user has an account, and can edit the information of the account.
 
 Main success scenario:
-
-   1.The user requests to create an account/ sign in.
- 
-   2.The system prompts the user to provide the name, password and color of the profile.
- 
-   3.The system checks that the username is not already taken/ The system checks if the request is   currently allowed.
- 
-   4.The system creates and saves the user's account.
- 
-   5.The system switches to a log-in screen.
- 
-   6.The user puts the name and password, and requests to log-in.
- 
-   7.The system checks if the request is currently allowed/ checks if username and password matches.
- 
-   8.The system successfully logs in to the account.
+	
+	   1.The user requests to create an account/ sign in.
+	 
+	   2.The system prompts the user to provide the name, password and color of the profile.
+	 
+	   3.The system checks that the username is not already taken/ The system checks if the request is   currently allowed.
+	 
+	   4.The system creates and saves the user's account.
+	 
+	   5.The system switches to a log-in screen.
+	 
+	   6.The user puts the name and password, and requests to log-in.
+	 
+	   7.The system checks if the request is currently allowed/ checks if username and password matches.
+	 
+	   8.The system successfully logs in to the account.
 
 Extensions:
 		3a. Username already exists
