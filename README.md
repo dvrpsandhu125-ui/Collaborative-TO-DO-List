@@ -62,6 +62,7 @@ Main success scenario:
 	   8.The system successfully logs in to the account.
 
 Extensions:
+
 		3a. Username already exists
 			The system informs the user and asks them to choose another username.
 		3b. Invalid login credentials
