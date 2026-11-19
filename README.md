@@ -16,33 +16,49 @@ Solution: A collaborative To-Do list where users can add, modify, and update tas
 ---
 ## User Stories
 ### As a new user, I want to create a new account so that I can access the application. 
+
 ###As a returning user, I want to log in to my account so that I can access my groups and events. 
-###As a user, I want to customize my username and profile picture, so that other users can recognise me. 
+
+###As a user, I want to customize my username and profile picture, so that other users can recognise me.
+
 ###As a group member, I want to manage the groups that I belong to, such as editing group information or leaving a group, so that I can keep my groups organized and relevant to me.
+
 ###As a group member, I want to create a task with a name, description(it has character limit), and optional features such as a deadline (including date, an undecided option, and days remaining), location, assigned roles and task status, so that my group members can view the task details, track deadlines, access relevant resources, and understand who is responsible for the task.
+
 ###As a group member, I want to edit the task such as name, description, and optional features such as a deadline (including date, an undecided option, and days remaining), location, assigned roles, and task status, so that I can keep the task information up to date and ensure that all group members can see the changes.
+
 ###As a group member, I want to delete an existing task, so that the rest of my group can see it is removed from the group list.
+
 ### As a group member, I want to recover a task from trash, so that the rest of my group can see it is back in the group.
-###
 
-
-(Add additional user stories as needed.)
 ---
 ## Use Cases
 ###Creating Profile and Logging 
+
 Primary actor: User
-Preconditions: The user has access to the application
-Trigger: The user requests to create an account/sign in, log into account, 
+
+Preconditions: The user has access to the application.
+
+Trigger: The user requests to create an account/sign in, log into account.
+
 Success outcome: The user has an account, and can edit the information of the account.
+
 Main success scenario:
-The user requests to create an account/ sign in.
-The system prompts the user to provide the name, password and color of the profile.
-The system checks that the username is not already taken/ The system checks if the request is currently allowed.
-The system creates and saves the user's account.
-The system switches to a log-in screen.
-The user puts the name and password, and requests to log-in.
-The system checks if the request is currently allowed/ checks if username and password matches.
-The system successfully logs in to the account.
+ 1.The user requests to create an account/ sign in.
+ 
+ 2.The system prompts the user to provide the name, password and color of the profile.
+ 
+ 3.The system checks that the username is not already taken/ The system checks if the request is currently allowed.
+ 
+ 4.The system creates and saves the user's account.
+ 
+ 5.The system switches to a log-in screen.
+ 
+ 6.The user puts the name and password, and requests to log-in.
+ 
+ 7.The system checks if the request is currently allowed/ checks if username and password matches.
+ 
+ 8.The system successfully logs in to the account.
 
 Extensions:
 3a. Username already exists
