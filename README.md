@@ -210,8 +210,14 @@ Extensions:
 ---
 ## API Usage
 **API Name:**
-**Documentation:** [Link]
+Open-Meteo API 
+
+**Documentation:** [Link](https://open-meteo.com)
+
 **How it is used in the program:**
+Based on the task’s coordinates and deadline date, the API gives the daily conditions, high/low temperature, and precipitation chance, and displays them. In our program, it will show in our task detail/edit view and the task cards on the dashboard. It only appears for tasks that have both a deadline and a location. 
+
+
 ---
 ## Design Diagrams
 ### UML Class Diagram
