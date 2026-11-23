@@ -1,4 +1,25 @@
 package entity;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Task {
+    private final int task_id;
+    private final String task_name;
+    private final String task_description;
+    private final String task_status;
+    private final String location;
+    private final LocalDate deadline;
+    private final List<User> assignedMembers;
+
+    public Task(int id, String name, String description){
+        this.task_name = name;
+        this.task_description = description;
+        this.task_id = id;
+
+        this.task_status = "NOT_STARTED";
+        this.location = null;
+        this.deadline = null;
+        this.assignedMembers = new ArrayList<>();
+    }
 }
