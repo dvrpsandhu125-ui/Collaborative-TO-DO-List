@@ -7,6 +7,7 @@ public class User {
 
     private final String name;
     private final String password;
+    private final String color;
 
     /**
      * Creates a new user with the given non-empty name and non-empty password.
@@ -15,15 +16,19 @@ public class User {
      * @param password the password
      * @throws IllegalArgumentException if the password or name are empty
      */
-    public User(String name, String password) {
+    public User(String name, String password, String color) {
         if ("".equals(name)) {
             throw new IllegalArgumentException("Username cannot be empty");
         }
         if ("".equals(password)) {
             throw new IllegalArgumentException("Password cannot be empty");
         }
+        if ("".equals(color)) {
+            throw new IllegalArgumentException("Color cannot be empty");
+        }
         this.name = name;
         this.password = password;
+        this.color = color;
     }
 
     public String getName() {
@@ -33,4 +38,9 @@ public class User {
     public String getPassword() {
         return password;
     }
+
+    public String getColor() {
+        return color;
+    }
+
 }

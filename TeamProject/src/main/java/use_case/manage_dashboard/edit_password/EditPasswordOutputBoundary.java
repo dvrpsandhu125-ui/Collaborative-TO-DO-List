@@ -1,11 +1,13 @@
-package use_case.create_editing_task.creating_task.manage_dashboard;
+package use_case.manage_dashboard.edit_password;
 
-public interface ManageDashboardOutputBoundary {
+import use_case.manage_dashboard.edit_name.EditNameOutputData;
+
+public interface EditPasswordOutputBoundary {
     /**
      * Prepares the success view for the Manage Dashboard Use Case.
      * @param outputData the output data.
      */
-    void prepareSuccessView(ManageDashboardOutputData outputData);
+    void prepareSuccessView(EditPasswordOutputData outputData);
 
 
     /**
