@@ -13,12 +13,6 @@ public class EditNameInputData {
         this.username = username;
     }
 
-
-    String getPassword(){return password; }
-
-
     String getUsername(){return username; }
 
-
-    String getColor(){return color; }
 }

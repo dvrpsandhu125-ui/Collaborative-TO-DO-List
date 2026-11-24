@@ -1,5 +1,9 @@
 package use_case.manage_dashboard.edit_password;
 
+/**
+ * Output Data for the Edit Password Use Case.
+ */
+
 public class EditPasswordOutputData {
     private final String password;
 

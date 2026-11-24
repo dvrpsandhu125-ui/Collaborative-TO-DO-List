@@ -7,7 +7,7 @@ package use_case.manage_dashboard.edit_name;
 public interface EditNameInputBoundary {
 
     /**
-     * Execute the Manage Dashboard Use Case.
+     * Execute the Edit Name Use Case.
      * @param editNameInputData the input data for this use case.
      */
     void execute(EditNameInputData editNameInputData);

@@ -7,7 +7,7 @@ import entity.User;
  */
 
 public class EditNameInteractor implements EditNameInputBoundary {
-    private final EditNameUserDataAccessInterface userDataAccessObject;
+    /* private final EditNameUserDataAccessInterface userDataAccessObject;
     private final EditNameOutputBoundary userPresenter;
     
 
@@ -22,11 +22,10 @@ public class EditNameInteractor implements EditNameInputBoundary {
         final User user = new User(manageDashboardInputData.getUsername(),
                 manageDashboardInputData.getPassword(), manageDashboardInputData.getColor());
 
-        userDataAccessObject.editPassword(user);
         userDataAccessObject.editUsername(user);
-        userDataAccessObject.editColor(user);
 
         final EditNameOutputData manageDashboardOutputData = new EditNameOutputData(user.getName());
         userPresenter.prepareSuccessView(manageDashboardOutputData);
     }
+     */
 }

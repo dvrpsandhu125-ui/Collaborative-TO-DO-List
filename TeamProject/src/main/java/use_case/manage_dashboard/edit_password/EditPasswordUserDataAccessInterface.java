@@ -4,9 +4,9 @@ import entity.User;
 
 public interface EditPasswordUserDataAccessInterface {
     /**
-     * Updates the system to record this user's username, password, and color.
+     * Updates the system to record this user's password.
      *
-     * @param user the user whose username, password, and color are to be updated/edited.
+     * @param user the user whose password are to be updated/edited.
      */
     void editPassword(User user);
 

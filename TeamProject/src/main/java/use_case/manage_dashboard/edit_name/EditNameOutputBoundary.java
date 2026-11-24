@@ -2,7 +2,7 @@ package use_case.manage_dashboard.edit_name;
 
 public interface EditNameOutputBoundary {
     /**
-     * Prepares the success view for the Manage Dashboard Use Case.
+     * Prepares the success view for the Edit Name Use Case.
      * @param outputData the output data.
      */
     void prepareSuccessView(EditNameOutputData outputData);

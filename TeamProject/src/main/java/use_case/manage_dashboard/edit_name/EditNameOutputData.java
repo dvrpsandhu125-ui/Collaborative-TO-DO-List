@@ -1,7 +1,7 @@
 package use_case.manage_dashboard.edit_name;
 
 /**
- * Output Data for the Dashboard Use Case.
+ * Output Data for the Edit Name Use Case.
  */
 
 public class EditNameOutputData {
