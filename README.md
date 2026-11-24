@@ -189,6 +189,46 @@ Extensions:
 		6a. The user does not confirm
 			The system does not recover the task
 
+### Use case: Manage Availability Poll
+
+Primary actor: Group member
+
+Preconditions: 
+	The user is logged in
+	The task exists and belongs to a group the user is a member of.
+	
+Trigger: The user wants to coordinate a suitable date and time with other group members.
+
+Success outcome: Group members can vote on proposed dates and times, view the results, and reach a decision.
+
+Main success scenario:
+
+	1. The user opens a task.
+	2. The user selects the option to create an availability poll.
+	3. The system allows the user to enter multiple date and time options.
+	4. The user publishes the poll.
+	5. The system displays the poll to all members of the group.
+	6. Group members select the options they are available for.
+	7. The system records their votes.
+	8. Members can view the updated voting results.
+	9. The poll creator closes the poll and confirms the selected date and time.
+	10. The system updates the task with the confirmed date and time.
+	
+Extensions: 
+
+	3a. Invalid date or time is entered.
+		The system informs the user that the date or time is invalid and asks them to correct it.
+
+	6a. The group member has already voted.
+		The system displays their existing vote and allows them to change their selection.
+
+	7a. The system cannot save the member's vote.
+		The system informs the member that their vote could not be saved and allows them to try again.
+
+	9a. No poll option is selected when closing the poll.
+		The system prompts the poll creator to select an option before confirming the poll.
+
+
 
 (Add additional use cases as needed.)
 ---
