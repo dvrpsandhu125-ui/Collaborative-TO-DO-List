@@ -22,4 +22,11 @@ public class Task {
         this.deadline = null;
         this.assignedMembers = new ArrayList<>();
     }
+
+    public String getTask_id() {
+        return task_id;
+    }
+    public String getTask_name() {
+        return task_name;
+    }
 }
