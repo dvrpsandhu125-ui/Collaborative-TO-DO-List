@@ -12,6 +12,7 @@ public class Task {
     private final String location;
     private final LocalDate deadline;
     private final List<User> assignedMembers;
+    private boolean is_deleted;
 
     public Task(int id, String group_id, String name, String description){
         this.task_id = id;
@@ -23,5 +24,6 @@ public class Task {
         this.location = null;
         this.deadline = null;
         this.assignedMembers = new ArrayList<>();
+        this.is_deleted = false;
     }
 }
