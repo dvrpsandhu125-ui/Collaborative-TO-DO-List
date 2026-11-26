@@ -14,5 +14,5 @@ public interface EditColorUserDataAccessInterface {
      * @param user the user whose color are to be updated/edited.
      */
 
-    void editColor(User user);
+    void saveColor(User user);
 }

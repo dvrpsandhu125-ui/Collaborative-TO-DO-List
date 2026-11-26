@@ -8,6 +8,6 @@ public interface EditPasswordUserDataAccessInterface {
      *
      * @param user the user whose password are to be updated/edited.
      */
-    void editPassword(User user);
+    void savePassword(User user);
 
 }

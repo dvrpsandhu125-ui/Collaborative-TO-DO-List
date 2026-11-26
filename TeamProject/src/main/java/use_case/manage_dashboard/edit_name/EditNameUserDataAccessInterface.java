@@ -18,6 +18,6 @@ public interface EditNameUserDataAccessInterface {
      * Updates the system to record this user's username.
      * @param user the user whose username are to be updated/edited.
      */
-    void editUsername(User user);
+    void saveUsername(User user);
 
 }
