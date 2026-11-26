@@ -12,7 +12,7 @@ public class Task {
     private final LocalDate deadline;
     private final List<User> assignedMembers;
 
-    public Task(int id, String name, String description){
+    public Task(int id, String name, String description, String status, LocalDate deadline, String location, List<User> assignedMembers){
         this.task_name = name;
         this.task_description = description;
         this.task_id = id;
@@ -23,7 +23,7 @@ public class Task {
         this.assignedMembers = new ArrayList<>();
     }
 
-    public String getTask_id() {
+    public int getTask_id() {
         return task_id;
     }
     public String getTask_name() {

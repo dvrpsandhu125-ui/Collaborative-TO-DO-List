@@ -1,5 +1,7 @@
 package use_case.create_editing_task.creating_task;
 
+import entity.User;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -10,7 +12,7 @@ public class CreateTaskInputData {
     private final String status;
     private final LocalDate deadline;
     private final String location;
-    private final List<String> assignedMembers;
+    private final List<User> assignedMembers;
 
 
     public CreateTaskInputData(
@@ -20,7 +22,7 @@ public class CreateTaskInputData {
             String status,
             LocalDate deadline,
             String location,
-            List<String> assignedMembers) {
+            List<User> assignedMembers) {
 
         this.group_id = group_id;
         this.name = name;
@@ -48,7 +50,7 @@ public class CreateTaskInputData {
         return location;
     }
 
-    public List<String> getAssignedMembers() {
+    public List<User> getAssignedMembers() {
         return assignedMembers;
     }
 

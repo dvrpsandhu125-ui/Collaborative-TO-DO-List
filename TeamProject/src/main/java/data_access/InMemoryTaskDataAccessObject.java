@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class InMemoryTaskDataAccessObject implements CreateTaskDataAccessInterface {
 
-    private final Map<String, Task> tasks = new HashMap<>();
+    private final Map<Integer, Task> tasks = new HashMap<>();
     private int nextId = 1;
 
     @Override
@@ -21,7 +21,7 @@ public class InMemoryTaskDataAccessObject implements CreateTaskDataAccessInterfa
     }
 
     @Override
-    public Task getTask(String task_id){
+    public Task getTask(int task_id){
 
         return tasks.get(task_id);
     }

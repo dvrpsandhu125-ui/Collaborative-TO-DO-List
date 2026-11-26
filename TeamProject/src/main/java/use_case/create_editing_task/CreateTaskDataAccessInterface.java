@@ -6,16 +6,8 @@ import entity.Task;
 public interface CreateTaskDataAccessInterface {
     void saveTask(Task task);
 
-    Task getTask(String taskId);
+    Task getTask(int task_id);
 
     int generateTaskId();
 
-    interface TaskDataAccessInterface {
-
-        void saveTask(Task task);
-
-        Task getTask(String id);
-
-        String generateTaskId();
-    }
 }
