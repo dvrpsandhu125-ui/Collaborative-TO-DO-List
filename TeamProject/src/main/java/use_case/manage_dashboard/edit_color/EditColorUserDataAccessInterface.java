@@ -9,6 +9,15 @@ import entity.User;
 public interface EditColorUserDataAccessInterface {
 
     /**
+     * Returns the user with the given username, or null if none exists.
+     *
+     * @param username the username to look up
+     * @return the matching user, or null
+     */
+
+    User get(String username);
+
+    /**
      * Updates the system to record this user's color.
      *
      * @param user the user whose color are to be updated/edited.

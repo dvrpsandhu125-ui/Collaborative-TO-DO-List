@@ -1,9 +1,12 @@
 package use_case.manage_dashboard.switch_groups;
 
+import entity.Group;
+
 public interface SwitchGroupsUserDataAccessInterface {
     /**
-     * Updates the system to record this user's selected group.
+     * Returns the group that the user selected.
      *
-     * @param user the user whose password are to be updated/edited.
+     * @param groupName the group the user selected.
      */
+    Group getGroup(String groupName);
 }

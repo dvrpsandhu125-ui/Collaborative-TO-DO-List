@@ -17,16 +17,23 @@ import java.util.Map;
 public class InMemoryUserDataAccessObject implements
         EditColorUserDataAccessInterface,
         EditNameUserDataAccessInterface,
-        EditPasswordUserDataAccessInterface,
-        SwitchGroupsUserDataAccessInterface {
+        EditPasswordUserDataAccessInterface
+{
 
     private final Map<String, User> users = new HashMap<>();
 
-    private String currentUsername;
+    public void save(User user) {
+        users.put(user.getName(), user);
+    }
+
+    @Override
+    public User get(String username) {
+        return users.get(username);
+    }
 
     @Override
     public void saveColor(User user) {
-        users.put(user.getColor(), user);
+        users.put(user.getName(), user);
     }
 
     @Override
@@ -35,12 +42,13 @@ public class InMemoryUserDataAccessObject implements
     }
 
     @Override
-    public void saveUsername(User user) {
+    public void updateUsername(String oldUsername, User user) {
+        users.remove(oldUsername);
         users.put(user.getName(), user);
     }
 
     @Override
     public void savePassword(User user) {
-        users.put(user.getPassword(), user);
+        users.put(user.getName(), user);
     }
 }
