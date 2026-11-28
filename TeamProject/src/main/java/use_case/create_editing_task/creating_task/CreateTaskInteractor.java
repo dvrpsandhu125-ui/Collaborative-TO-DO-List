@@ -26,15 +26,15 @@ public class CreateTaskInteractor implements CreateTaskInputBoundary{
     }
         if (createTaskInputData.getDescription() == null ||
                 createTaskInputData.getDescription().isBlank()) {
-            createTaskPresenter.prepareFailView(" Task description cannot be empty.");
+            createTaskPresenter.prepareFailView("Task description cannot be empty.");
         }
 
         if (createTaskInputData.getDescription().length() > 200) {
-            createTaskPresenter.prepareFailView(" The description cannot exceed 200 character.");
+            createTaskPresenter.prepareFailView("The description cannot exceed 200 character.");
         }
         else{
             int taskId = createTaskDataAccessObject.generateTaskId();
-            final Task task = new Task(
+            final Task task = new Task(createTaskInputData.getGroup_id(),
                     taskId,
                     createTaskInputData.getName(),
                     createTaskInputData.getDescription(),

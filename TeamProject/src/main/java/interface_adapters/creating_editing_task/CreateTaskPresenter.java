@@ -21,6 +21,7 @@ public class CreateTaskPresenter implements CreateTaskOutputBoundary {
         // We need to update/clear create task view model that state is changed.
         final TaskTableState taskTableState = taskViewModel.getState();
         Task newTask = new Task(
+                response.getGroup_id(),
                 response.getTask_id(),
                 response.getTask_name(),
                 response.getTask_description(),
