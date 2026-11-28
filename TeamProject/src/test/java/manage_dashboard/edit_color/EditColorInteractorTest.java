@@ -44,6 +44,21 @@ class EditColorInteractorTest {
         InMemoryUserDataAccessObject userRepository = new InMemoryUserDataAccessObject();
 
         // This creates a presenter that tests whether the test case is as we expect.
-    }
+        EditColorOutputBoundary failurePresenter = new EditColorOutputBoundary() {
+            @Override
+            public void prepareSuccessView(EditColorOutputData outputData) {
+                // should never be reached since the test case should fail
+                fail("Use case success is unexpected.");
+            }
+
+            @Override
+            public void prepareFailView(String error) {
+                assertEquals("Veronica: Account does not exist.", error);
+            }
+        };
+
+        EditColorInputBoundary interactor = new EditColorInteractor(userRepository, failurePresenter);
+        interactor.execute(inputData);
+        }
 
 }
